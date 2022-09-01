@@ -12,11 +12,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyTestConfig {
 
-    @Bean
+/*    @Bean
     public Person person(){
         Person p = new Person();
         p.setAge(27);
         p.setName("小A");
         return p;
-    }
+    }*/
 }

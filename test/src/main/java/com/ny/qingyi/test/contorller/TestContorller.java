@@ -27,6 +27,12 @@ public class TestContorller {
     @Autowired
     private Map<String,PlayService> map;
 
+    @Autowired
+    private Person person;
+
+    @Autowired
+    private Person person01;
+
     @RequestMapping("/testPrimary")
     private String test01(){
         playService.play();
