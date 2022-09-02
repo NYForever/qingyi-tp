@@ -3,6 +3,7 @@ package com.ny.qingyi.test.contorller;
 import com.ny.qingyi.test.aware.MyTestAware;
 import com.ny.qingyi.test.pojo.Person;
 import com.ny.qingyi.test.service.PlayService;
+import com.qytp.thread.QytpExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,10 +33,10 @@ public class TestContorller {
     private Map<String,PlayService> map;
 
     @Autowired
-    private Person person;
+    private QytpExecutor qingyiTestThreadPool;
 
     @Autowired
-    private Person person01;
+    private QytpExecutor threadPoolTest01;
 
     @RequestMapping("/testPrimary")
     private String test01(){

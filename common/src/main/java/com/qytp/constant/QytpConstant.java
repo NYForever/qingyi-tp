@@ -7,5 +7,7 @@ package com.qytp.constant;
  */
 public class QytpConstant {
 
-    public static final String MAIN_PROPERTITY_PREFIX = "qingyi.tp";
+    public static final String MAIN_PROPERTITY_PREFIX = "spring.qingyi.tp";
+
+    public static final String THREAD_POOL_NAME = "threadPoolName";
 }
