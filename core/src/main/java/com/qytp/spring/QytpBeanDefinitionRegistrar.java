@@ -37,6 +37,7 @@ public class QytpBeanDefinitionRegistrar implements ImportBeanDefinitionRegistra
             return;
         }
 
+
         for (ThreadPoolProterties executor : qingyiTPProterties.getExecutors()) {
 
         }
