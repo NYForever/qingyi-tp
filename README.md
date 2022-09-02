@@ -5,15 +5,15 @@ qingyi ===> 清一|清伊     tp ===> threadPool
 动态线程池项目；学习大佬代码，从零开始写
 
 原项目：[dynamic-tp](https://github.com/dromara/dynamic-tp)
-
 ### 1.第一步：加载配置文件中配置的ThreadPoolExecutor对象到Spring容器中
 
-####1.自定义启动类注解 @EnableQingyiTP
+- 1.自定义启动类注解 @EnableQingyiTP
 
-####2.Import类QytpBeanDefinitionRegistrar
+- 2.Import类QytpBeanDefinitionRegistrar
 
-####3.核心逻辑如下
+- 3.核心逻辑如下
 
+```java
         @Override
         public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
         //从environment对象中获取threadPoolExecutor相关配置
