@@ -3,12 +3,15 @@ package com.ny.qingyi.test.contorller;
 import com.ny.qingyi.test.aware.MyTestAware;
 import com.ny.qingyi.test.pojo.Person;
 import com.ny.qingyi.test.service.PlayService;
+import com.qytp.config.QytpProterties;
 import com.qytp.thread.QytpExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.Map;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadFactory;
@@ -37,6 +40,12 @@ public class TestContorller {
 
     @Autowired
     private QytpExecutor threadPoolTest01;
+
+    @Resource
+    private QytpProterties qingyiTPProterties;
+
+    @Value("${qingyi.tp.test}")
+    private String testString;
 
     @RequestMapping("/testPrimary")
     private String test01(){

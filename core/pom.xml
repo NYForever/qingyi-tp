@@ -18,10 +18,12 @@
 
 
     <dependencies>
+
         <dependency>
             <groupId>com.ny</groupId>
             <artifactId>common</artifactId>
             <version>1.0.0</version>
         </dependency>
+
     </dependencies>
 </project>

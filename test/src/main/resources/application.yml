@@ -1,9 +1,7 @@
-server:
-  port: 8080
+#server:
+#  port: 8080
 
 spring:
-  application:
-    name: qingyi-tp-test
   qingyi:
     tp:
       enable: true
@@ -23,3 +21,5 @@ spring:
           queueType: ArrayBlockingQueue
           rejectedHandlerType: AbortPolicy
           keepAliveTime: 1
+
+

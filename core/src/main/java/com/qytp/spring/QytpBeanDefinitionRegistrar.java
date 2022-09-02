@@ -1,6 +1,6 @@
 package com.qytp.spring;
 
-import com.qytp.config.QingyiTPProterties;
+import com.qytp.config.QytpProterties;
 import com.qytp.config.ThreadPoolProterties;
 import com.qytp.constant.QytpConstant;
 import com.qytp.thread.QytpExecutor;
@@ -35,9 +35,9 @@ public class QytpBeanDefinitionRegistrar implements ImportBeanDefinitionRegistra
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
         //从environment对象中获取threadPoolExecutor相关配置
-        QingyiTPProterties qingyiTPProterties = new QingyiTPProterties();
+        QytpProterties qingyiTPProterties = new QytpProterties();
         Binder binder = Binder.get(environment);
-        ResolvableType resolvableType = ResolvableType.forClass(QingyiTPProterties.class);
+        ResolvableType resolvableType = ResolvableType.forClass(QytpProterties.class);
         Bindable<Object> target = Bindable.of(resolvableType).withExistingValue(qingyiTPProterties);
         binder.bind(QytpConstant.MAIN_PROPERTITY_PREFIX, target);
 
