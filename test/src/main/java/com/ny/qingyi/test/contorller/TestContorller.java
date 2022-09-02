@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author wenan.ren
@@ -41,6 +45,14 @@ public class TestContorller {
 
     @RequestMapping("/testAware")
     private String testAware(){
+
+        new ThreadPoolExecutor(10, 20, 1000, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<Runnable>(), new ThreadFactory() {
+            @Override
+            public Thread newThread(Runnable r) {
+                return new Thread();
+            }
+        });
+
         PlayService dogPlayServiceImpl = map.get("dogPlayServiceImpl");
         dogPlayServiceImpl.play();
         PlayService dogPlayService = applicationContext.getBean("dogPlayServiceImpl", PlayService.class);

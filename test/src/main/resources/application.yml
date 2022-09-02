@@ -4,3 +4,19 @@ server:
 spring:
   application:
     name: qingyi-tp-test
+
+
+qingyi:
+  tp:
+    enable: true
+    nacos:
+      dataId: dataId01
+      group: group01
+    executors:
+      - threadPoolName: qingyiTestThreadPool
+        corePoolSize: 10
+        maximumPoolSize: 20
+        queueType: ArrayBlockingQueue
+        rejectedHandlerType: AbortPolicy
+        keepAliveTime: 1
+        timeUnit: second

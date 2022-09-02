@@ -19,7 +19,6 @@ import java.util.Map;
  */
 public class MyImportBeanDefinition implements ImportBeanDefinitionRegistrar , EnvironmentAware {
 
-
     private Environment environment;
 
     @Override
