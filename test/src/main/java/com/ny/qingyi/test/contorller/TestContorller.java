@@ -6,7 +6,6 @@ import com.ny.qingyi.test.service.PlayService;
 import com.qytp.config.QytpProterties;
 import com.qytp.thread.QytpExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,8 +43,8 @@ public class TestContorller {
     @Resource
     private QytpProterties qingyiTPProterties;
 
-    @Value("${qingyi.tp.test}")
-    private String testString;
+//    @Value("${qingyi.tp.test}")
+//    private String testString;
 
     @RequestMapping("/testPrimary")
     private String test01(){
