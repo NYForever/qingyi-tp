@@ -13,8 +13,8 @@ import java.util.List;
  * @date 2022/9/2 10:15
  * @Description
  */
-@Slf4j
 @Data
+@Slf4j
 @ConfigurationProperties(prefix = QytpConstant.MAIN_PROPERTITY_PREFIX)
 public class QytpProterties {
 
@@ -28,5 +28,3 @@ public class QytpProterties {
         private String group;
     }
 }
-
-
