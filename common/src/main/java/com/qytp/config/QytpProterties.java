@@ -7,14 +7,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
 
+
 /**
  * @author wenan.ren
  * @date 2022/9/2 10:15
  * @Description
  */
 @Slf4j
-@ConfigurationProperties(prefix = QytpConstant.MAIN_PROPERTITY_PREFIX)
 @Data
+@ConfigurationProperties(prefix = QytpConstant.MAIN_PROPERTITY_PREFIX)
 public class QytpProterties {
 
     private Boolean enable;
@@ -27,6 +28,5 @@ public class QytpProterties {
         private String group;
     }
 }
-
 
 
