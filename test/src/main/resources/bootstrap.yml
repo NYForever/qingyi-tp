@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: qingyi-tp-test
+
+server:
+  port: 8080

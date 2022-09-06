@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 @Configuration
 @ConditionalOnBean(NacosConfigProperties.class)
-@EnableConfigurationProperties(QytpProterties.class)
+//@EnableConfigurationProperties(QytpProterties.class)
 public class QytpAutoConfiguration {
 
     @Bean
