@@ -22,7 +22,7 @@ public class CloudNacosRefresh implements SmartApplicationListener {
 
     @Override
     public boolean supportsEventType(Class<? extends ApplicationEvent> eventType) {
-        if (RefreshScopeRefreshedEvent.class.equals(eventType.getClass())) {
+        if (RefreshScopeRefreshedEvent.class.equals(eventType)) {
             return true;
         }
         return false;
