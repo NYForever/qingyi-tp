@@ -34,7 +34,7 @@
 
         <dependency>
             <groupId>com.ny</groupId>
-            <artifactId>qingyi-tp-spring-cloud-nacos-starter</artifactId>
+            <artifactId>qingyi-tp-starter-cloud-nacos</artifactId>
             <version>1.0.0</version>
         </dependency>
 
