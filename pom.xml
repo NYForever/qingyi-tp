@@ -30,6 +30,7 @@
         <module>core</module>
         <module>starter</module>
         <module>example</module>
+        <module>kaiyuan</module>
     </modules>
 
     <dependencies>
