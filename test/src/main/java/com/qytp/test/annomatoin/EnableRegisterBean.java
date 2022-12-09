@@ -15,4 +15,5 @@ import java.lang.annotation.*;
 @Documented
 @Import(MyImportBeanDefinition.class)
 public @interface EnableRegisterBean {
+    // just Git test, ignore
 }
