@@ -15,5 +15,5 @@ import java.lang.annotation.*;
 @Documented
 @Import(QytpBeanDefinitionRegistrar.class)
 public @interface EnableQingyiTP {
-
+    // just Git test, ignore
 }
